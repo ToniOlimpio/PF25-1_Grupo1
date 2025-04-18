@@ -3,22 +3,6 @@
 output-file: "Nome do alocado - análise 1 e 2"
 ---
 
-```{r setup}
-source("rdocs/consultor1.R")
-```
-
-```{r}
-# Rodar apenas uma vez na vida!
-## Instalando o tinytex(pacote apenas)
-### CRAN version
-install.packages('tinytex')
-
-
-## Baixando o tinytex
-library(tinytex)
-tinytex::install_tinytex()
-```
-
 # Objetivo
 
 Esse template foi criado para o alocado conseguir observar como ficaria sua análise o arquivo principal. É daqui que o gerente de projetos irá copiar a análise e inserir no documento principal que gerará o relatório estatístico.
@@ -27,53 +11,17 @@ Esse template foi criado para o alocado conseguir observar como ficaria sua aná
 
 ## Análise 1
 
-## Análise 2
+Na primeira análise, foi examinada a relação entre a variável quantitativa 'taxa Selic', que exerce influência sobre todas as demais taxas econômicas do país, e as variáveis quantitativas 'inflação acumulada em 12 meses' e 'juros reais', no período de 1980 a 2023. Para representar esses dados, foram utilizados um gráfico bivariado de linhas e o coeficiente de correlação de Pearson.
 
-```{r}
-#| label: fig-
-#| fig-cap: "Gráfico "
+![](linhas_beta.pdf){fig-align="center" width="525mm" height="93mm"}
 
+\*Aqui eu planejo colocar a analise do grafico junto da correlaçao e as tabelas, mas eu nao consegui colocar o codigo pra funcionar \*
 
+## Correlação Linear entre Inflação e Taxa Selic
 
-```
+O presente estudo tem como objeto de análise a relação linear entre as variáveis quantitativas contínuas inflação e taxa Selic. O objetivo dessa investigação é compreender o impacto da inflação, indicador que representa o aumento generalizado dos preços dos bens de consumo no país, sobre a taxa Selic, que constitui a taxa básica de juros da economia. Para isso, foram utilizados métodos estatísticos como o gráfico de dispersão bivariado e o Coeficiente de Correlação de Pearson, proporcionando uma melhor compreensão das interações entre as variáveis analisadas.
 
-
-::: {#quad- layout-align="center" quad-pos="H"}
-```{=latex}
+![Gráfico de dispersão de Inflação e Taxa Selic](Rplot.pdf){fig-align="center" width="158mm" height="93mm"}
 
 
-
-```
-
-Medidas resumo da 
-:::
-
-
-
-::: {#tbl-modalidades layout-align="center" tbl-pos="H"}
-```{=latex}
-
-
-```
-
-
-:::
-
-
-
-
-$\ref{fig-}$
-
-[@tbl-]
-
-
-[**Quadro** @quad-]
-
-
-
-
-
-
-
-
-
+Pode ser observado no gráfico que existe uma linearidade entre as variáveis, o que pode ser comprovado pelo Coeficiente de Correlação de Pearson que assume o valor aproximado de 0.6353, significando uma relação significativa entre a inflação e a taxa Selic. Como a taxa Selic representa a taxa básica de juros, pode ser esperado que a inflação seja afetada, como foi apresentado acima.
